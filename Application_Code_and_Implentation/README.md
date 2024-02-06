@@ -1,4 +1,5 @@
 The vivado project is located in "project_1" directory.
+
 The platform project and the application project are located in "Vitis_Final_Project" directory.
 
 Some files are missed in "project_1" directory; Because getting error for committing them to

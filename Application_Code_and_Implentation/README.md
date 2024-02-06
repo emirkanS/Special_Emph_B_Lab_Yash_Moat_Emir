@@ -13,3 +13,5 @@ Please, professor, Could you check them via the following link?
 The platform project is located in the "FinalProject" directory.
 
 The application project is located in the "FinalAPP" directory.
+
+The hardware wrapper "project_1_wrapper.xsa" is located in the "project_1" directory.

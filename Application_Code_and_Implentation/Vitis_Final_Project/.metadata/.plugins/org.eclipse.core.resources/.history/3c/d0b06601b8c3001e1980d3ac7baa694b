@@ -1,0 +1,240 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "PmodHYGRO.h"
+#include "sleep.h"
+#include "xil_cache.h"
+#include "xil_printf.h"
+#include "PmodPIR.h"
+
+#ifdef __MICROBLAZE__
+#define TIMER_FREQ_HZ XPAR_CPU_M_AXI_DP_FREQ_HZ
+#else
+#define TIMER_FREQ_HZ 100000000
+#endif
+
+
+
+void InitializePIR();
+void RunPIR();
+void InitializeHYGRO();
+void HygroRun();
+void Cleanup();
+void EnableCaches();
+void DisableCaches();
+
+PmodHYGRO humiditySensor;
+PmodPIR InfraredSensor;
+
+#define GPIO_DEVICE_ID  XPAR_AXI_SEVENSEG_0_DEVICE_ID
+#define LED_CHANNEL     1
+#define ANODE_CHANNEL 2
+
+// 0 = 0111111
+// 1 = 0000110
+// 2 = 1011011
+// 3 = 1001111
+// 4 = 1100110
+// 5 = 1101101
+// 6 = 1111101
+// 7 = 0000111
+// 8 = 1111111
+// 9 = 1101111
+// P = 1110011
+// D = 1011110
+// C = 0111001
+
+//Section 1: 0xFE (1111 1110)
+//Section 2: 0xFD (1111 1101)
+//Section 3: 0xFB (1111 1011)
+//Section 4: 0xF7 (1111 0111)
+//Section 5: 0xEF (1110 1111)
+//Section 6: 0xDF (1101 1111)
+//Section 7: 0xBF (1011 1111)
+//Section 8: 0x7F (0111 1111)
+
+float temp_degc, hum_perrh, temp_degf;
+int detect = 1;
+
+void InitializePIR() {
+   EnableCaches();
+   PIR_begin(&InfraredSensor, XPAR_PMODPIR_0_AXI_LITE_GPIO_BASEADDR);
+}
+
+void InitializeHYGRO() {
+   EnableCaches();
+   xil_printf("Init Started\n\r");
+   HYGRO_begin(
+      &humiditySensor,
+      XPAR_PMODHYGRO_0_AXI_LITE_IIC_BASEADDR,
+      0x40, // Chip address of PmodHYGRO IIC
+      XPAR_PMODHYGRO_0_AXI_LITE_TMR_BASEADDR,
+      XPAR_PMODHYGRO_0_DEVICE_ID,
+      TIMER_FREQ_HZ // Clock frequency of AXI bus, used to convert timer data
+   );
+   xil_printf("Init Done\n\r");
+}
+
+
+void RunPIR()
+{
+u32 state=0;
+xil_printf("Running PmodPIR Demo\n\r");
+	state = PIR_getState(&InfraredSensor);
+		if(state==1)
+		{
+		xil_printf("Motion Detected \n\r");
+		detect = 1;
+		}
+		else
+		{
+			xil_printf("NO Motion Detected \n\r");
+			detect = 0;
+		}
+
+}
+
+void HygroRun() {
+
+      temp_degc = HYGRO_getTemperature(&humiditySensor);
+      temp_degf = HYGRO_tempC2F(temp_degc);
+      hum_perrh = HYGRO_getHumidity(&humiditySensor);
+//      xil_printf(
+//         "Temperature: %d.%02d deg F  Humidity: %d.%02d RH\n\r",
+//         (int) temp_degf,
+//         ((int) (temp_degf * 100)) % 100,
+//         (int) hum_perrh,
+//         ((int) (hum_perrh * 100)) % 100
+//      );
+      // %f does not work with xil_printf
+      // instead, converting float to a pair of ints to display %.2f.
+
+      // 1 sample per second maximum, as per 9.2.1 in HDC1080 reference manual
+}
+
+void display_number(XGpio *Gpio, int number, int section1, int section2) {
+    int digit1 = number / 10; // First digit
+    int digit2 = number % 10; // Second digit
+
+    // Display the digits on the seven-segment display
+    usleep(1000);
+    XGpio_DiscreteWrite(Gpio, ANODE_CHANNEL, section1); // Select the first section
+    display_digit(Gpio, digit1, LED_CHANNEL);
+    usleep(1000);
+    XGpio_DiscreteWrite(Gpio, ANODE_CHANNEL, section2); // Select the second section
+    display_digit(Gpio, digit2, LED_CHANNEL);
+}
+
+
+void display_digit(XGpio *Gpio, int digit) {
+    // Lookup table for digits 0-9 on a seven-segment display
+    // For a common cathode display, '1' turns the segment off and '0' turns it on
+    int segment_patterns[10] = {
+        0b0111111, // 0
+        0b0000110, // 1
+        0b1011011, // 2
+        0b1001111, // 3
+        0b1100110, // 4
+        0b1101101, // 5
+        0b1111101, // 6
+        0b0000111, // 7
+        0b1111111, // 8
+        0b1101111  // 9
+    };
+
+
+    // Display the digit on the seven-segment display
+    XGpio_DiscreteWrite(Gpio, LED_CHANNEL, ~segment_patterns[digit]);
+}
+
+void display_other(XGpio *Gpio){
+
+	usleep(1000);
+	XGpio_DiscreteWrite(Gpio, ANODE_CHANNEL, 0xDF);
+	XGpio_DiscreteWrite(Gpio, LED_CHANNEL, ~(0b1110011));
+	usleep(1000);
+	XGpio_DiscreteWrite(Gpio, ANODE_CHANNEL, 0xFD);
+	XGpio_DiscreteWrite(Gpio, LED_CHANNEL, ~(0b1011110));
+	usleep(1000);
+	XGpio_DiscreteWrite(Gpio, ANODE_CHANNEL, 0xFE);
+	XGpio_DiscreteWrite(Gpio, LED_CHANNEL, ~(0b0111001));
+}
+
+
+int main() {
+    XGpio Gpio;
+    int status;
+
+    // Initialize the GPIO driver
+    status = XGpio_Initialize(&Gpio, GPIO_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    InitializeHYGRO();
+    InitializePIR();
+    // Set the direction for all signals to be outputs
+    XGpio_SetDataDirection(&Gpio, LED_CHANNEL, 0x00);
+    XGpio_SetDataDirection(&Gpio, ANODE_CHANNEL, 0x00);
+
+    int i;
+    int counter = 250;
+    int counter2 = 500;
+    int counter3 = 0;
+
+    for(i=0; i<100000; i++)
+    {
+
+    if(counter2 >= 500)
+    {
+    	RunPIR();
+    	counter2 = 0;
+    }
+
+    if(counter >= 250)
+    {
+    	HygroRun();
+    	counter = 0;
+    }
+
+//    xil_printf("%d    ", counter);
+    display_other(&Gpio);
+    display_number(&Gpio, temp_degc, 0xF7, 0xFB); // Display variable1 on sections 4 and 3
+    display_number(&Gpio, hum_perrh, 0x7F, 0xBF); // Display variable2 on sections 8 and 7
+
+    usleep(1000);
+
+    counter = counter + 1;
+    counter2 = counter2 +1;
+
+    }
+
+    Cleanup();
+
+    return XST_SUCCESS;
+}
+
+void Cleanup() {
+   DisableCaches();
+}
+
+void EnableCaches() {
+#ifdef __MICROBLAZE__
+#ifdef XPAR_MICROBLAZE_USE_ICACHE
+   Xil_ICacheEnable();
+#endif
+#ifdef XPAR_MICROBLAZE_USE_DCACHE
+   Xil_DCacheEnable();
+#endif
+#endif
+}
+
+void DisableCaches() {
+#ifdef __MICROBLAZE__
+#ifdef XPAR_MICROBLAZE_USE_ICACHE
+   Xil_ICacheDisable();
+#endif
+#ifdef XPAR_MICROBLAZE_USE_DCACHE
+   Xil_DCacheDisable();
+#endif
+#endif
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="FinalAPP_system-bitFile" value="${project_loc:FinalAPP}/_ide/bitstream/pmod_design_with_uart_wrapper.bit"/>
+	<item key="FinalAPP_system-bmmFile" value="${project_loc:FinalAPP}/_ide/bitstream/pmod_design_with_uart_wrapper.mmi"/>
+	<item key="FinalAPP_system-target" value="Local"/>
+	<item key="FinalAPP_system-device" value="Auto Detect"/>
+	<item key="FinalAPP_system-partial_bit" value="false"/>
+	<item key="FinalAPP_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="FinalAPP_system"/>
+	<item key="FinalAPP_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Nexys A7 -100T 210292B61C74A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Nexys A7 -100T-210292B61C74A-13631093-0&quot;}}]}"/>
+</section>

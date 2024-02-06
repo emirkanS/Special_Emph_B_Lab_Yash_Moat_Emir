@@ -8,7 +8,7 @@ the repo also failed to upload it as a .rar file.
 So that I uploaded all project files as a .rar file on Google Drive
 Please, professor, Could you check them via the following link?
 
-[Adavanced Hardware Engineering Project using FPGA](https://drive.google.com/drive/folders/1Zg0kyCJmz0nRHEkezMPiZ5E17GoW2_ms?usp=sharing)
+[Adavanced Hardware Engineering Project using FPGA](https://drive.google.com/drive/folders/1Zg0kyCJmz0nRHEkezMPiZ5E17GoW2_ms?usp=sharing) on Google Drive
 
 The platform project is located in the "FinalProject" directory.
 

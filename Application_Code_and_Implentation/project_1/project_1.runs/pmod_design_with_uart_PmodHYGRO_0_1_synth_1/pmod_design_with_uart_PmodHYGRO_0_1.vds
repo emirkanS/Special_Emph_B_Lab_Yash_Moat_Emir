@@ -1,0 +1,921 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Feb  3 11:20:39 2024
+# Process ID: 2972
+# Current directory: C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1
+# Command line: vivado.exe -log pmod_design_with_uart_PmodHYGRO_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pmod_design_with_uart_PmodHYGRO_0_1.tcl
+# Log file: C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/pmod_design_with_uart_PmodHYGRO_0_1.vds
+# Journal file: C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1\vivado.jou
+# Running On: Emirkan, OS: Windows, CPU Frequency: 3792 MHz, CPU Physical cores: 8, Host memory: 34277 MB
+#-----------------------------------------------------------
+source pmod_design_with_uart_PmodHYGRO_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 502.777 ; gain = 198.012
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:axi_i2s_adi:1.2'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/axi_i2s_adi_1.2' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/axi_i2s_adi_1.2
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:axi_ps2:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/axi_ps2_1.0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/axi_ps2_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:clock_forwarder:1.1'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/clock_forwarder' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/clock_forwarder
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:dvi2rgb:2.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/dvi2rgb' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/dvi2rgb
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_contrast_stretch:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/hls_contrast_stretch_1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/hls_contrast_stretch_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_gamma_correction:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/hls_gamma_correction_1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/hls_gamma_correction_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_saturation_enhance:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/hls_saturation_enhance_1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/hls_saturation_enhance_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:MotorFeedback:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/MotorFeedback_1.0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/MotorFeedback_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL2:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodACL2_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodACL2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodACL_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodACL_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD1:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodAD1_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAD1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD2:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodAD2_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAD2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD5:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodAD5_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAD5_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodALS:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodALS_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodALS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAMP2:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodAMP2_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAMP2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAQS:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodAQS_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAQS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBLE:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodBLE_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodBLE_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBT2:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodBT2_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodBT2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCAN:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodCAN_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCAN_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCLS:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodCLS_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCLS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCMPS2:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodCMPS2_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCMPS2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCOLOR:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodCOLOR_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCOLOR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDA1:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodDA1_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodDA1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDHB1:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodDHB1_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodDHB1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDPG1:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodDPG1_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodDPG1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodENC:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodENC_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodENC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:PmodESP32:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodESP32_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodESP32_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPIO:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodGPIO_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodGPIO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPS:1.1'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodGPS_v1_1' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodGPS_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGYRO:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodGYRO_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodGYRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodHYGRO:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodHYGRO_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodHYGRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK2:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodJSTK2_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodJSTK2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodJSTK_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodJSTK_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodKYPD:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodKYPD_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodKYPD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMAXSONAR:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodMAXSONAR_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodMAXSONAR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMTDS:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodMTDS_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodMTDS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodNAV:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodNAV_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodNAV_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLEDrgb:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/pmodOLEDrgb_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/pmodOLEDrgb_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLED:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodOLED_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodOLED_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodPIR:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodPIR_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodPIR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodR2R:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodR2R_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodR2R_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodRTCC:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodRTCC_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodRTCC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSD:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodSD_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodSD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSF3:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodSF3_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodSF3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTC1:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodTC1_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodTC1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTMP3:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodTMP3_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodTMP3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodWIFI:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/PmodWIFI_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodWIFI_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/Pmod_Bridge_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/Pmod_Bridge_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.1'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Pmods/Pmod_Bridge_v1_1' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Pmods/Pmod_Bridge_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/PWM_1.0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/PWM_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:2.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/PWM_2.0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/PWM_2.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM_Analyzer:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/PWM_Analyzer_1.0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/PWM_Analyzer_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dpvid:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/rgb2dpvid_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/rgb2dpvid_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.4'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/rgb2dvi' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/rgb2dvi
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2vga:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/rgb2vga_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/rgb2vga_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:Sync:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/Sync_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/Sync_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:usb2device:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/usb2device_v1_0' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/usb2device_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:video:video_scaler:1.0'. The one found in IP location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/ip/video_scaler' will take precedence over the same IP in location c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/ip/video_scaler
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:pmod:1.0'. The one found in location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/if/pmod_v1_0/pmod.xml' will take precedence over the same Interface in location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/if/pmod_v1_0/pmod.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:tmds:1.0'. The one found in location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-master/if/tmds_v1_0/tmds.xml' will take precedence over the same Interface in location 'c:/Users/a/Desktop/MoatazProject/Libraries/vivado-library-zmod-v1-2019.1-2/if/tmds_v1_0/tmds.xml'
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 528.582 ; gain = 25.805
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: pmod_design_with_uart_PmodHYGRO_0_1
+Command: synth_design -top pmod_design_with_uart_PmodHYGRO_0_1 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'pmod_design_with_uart_PmodHYGRO_0_1' is restricted:
+* IP definition 'PmodHYGRO_v1_0 (1.0)' relies on the following subcore(s) that were not found in the IP Catalog: xilinx.com:ip:axi_iic:2.0
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7708
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1366.879 ; gain = 409.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pmod_design_with_uart_PmodHYGRO_0_1' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/synth/pmod_design_with_uart_PmodHYGRO_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PmodHYGRO' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:12]
+INFO: [Synth 8-638] synthesizing module 'PmodHYGRO_axi_timer_0_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/synth/PmodHYGRO_axi_timer_0_0.vhd:90]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ONE_TIMER_ONLY bound to: 1 - type: integer 
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'axi_timer' declared at 'c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2088' bound to instance 'U0' of component 'axi_timer' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/synth/PmodHYGRO_axi_timer_0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_timer' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2143]
+INFO: [Synth 8-638] synthesizing module 'tc_core' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1704]
+INFO: [Synth 8-638] synthesizing module 'mux_onehot_f' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83264' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-256] done synthesizing module 'mux_onehot_f' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'count_module' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1438]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1474]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'count_module' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1438]
+INFO: [Synth 8-638] synthesizing module 'timer_control' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:921]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+INFO: [Synth 8-113] binding component instance 'READ_DONE0_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1074]
+INFO: [Synth 8-113] binding component instance 'READ_DONE1_I' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1084]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'timer_control' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-113] binding component instance 'PWM_FF_I' to cell 'FDRS' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1910]
+INFO: [Synth 8-256] done synthesizing module 'tc_core' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1704]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_timer' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2143]
+INFO: [Synth 8-256] done synthesizing module 'PmodHYGRO_axi_timer_0_0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/synth/PmodHYGRO_axi_timer_0_0.vhd:90]
+WARNING: [Synth 8-689] width (9) of port connection 's_axi_araddr' does not match port width (5) of module 'PmodHYGRO_axi_timer_0_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:290]
+WARNING: [Synth 8-689] width (9) of port connection 's_axi_awaddr' does not match port width (5) of module 'PmodHYGRO_axi_timer_0_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:294]
+WARNING: [Synth 8-7071] port 'capturetrig0' of module 'PmodHYGRO_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:288]
+WARNING: [Synth 8-7071] port 'capturetrig1' of module 'PmodHYGRO_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:288]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'PmodHYGRO_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:288]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'PmodHYGRO_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:288]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'PmodHYGRO_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:288]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'PmodHYGRO_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:288]
+WARNING: [Synth 8-7071] port 'freeze' of module 'PmodHYGRO_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:288]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'PmodHYGRO_axi_timer_0_0' has 26 connections declared, but only 19 given [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:288]
+INFO: [Synth 8-638] synthesizing module 'PmodHYGRO_axi_iic_0_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/synth/PmodHYGRO_axi_iic_0_0.vhd:91]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_IIC_FREQ bound to: 100000 - type: integer 
+	Parameter C_TEN_BIT_ADR bound to: 0 - type: integer 
+	Parameter C_GPO_WIDTH bound to: 2 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_SCL_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_LEVEL bound to: 1 - type: integer 
+	Parameter C_SMBUS_PMBUS_HOST bound to: 0 - type: integer 
+	Parameter C_DISABLE_SETUP_VIOLATION_CHECK bound to: 0 - type: integer 
+	Parameter C_STATIC_TIMING_REG_WIDTH bound to: 0 - type: integer 
+	Parameter C_TIMING_REG_WIDTH bound to: 32 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: 8'b00000000 
+INFO: [Synth 8-3491] module 'axi_iic' declared at 'c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:6832' bound to instance 'U0' of component 'axi_iic' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/synth/PmodHYGRO_axi_iic_0_0.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'axi_iic' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:6906]
+INFO: [Synth 8-638] synthesizing module 'iic' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:6210]
+INFO: [Synth 8-638] synthesizing module 'axi_ipif_ssp1' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:5677]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized20' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized20' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized21' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized21' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized22' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized22' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized23' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized23' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized24' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized24' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized25' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized25' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized26' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized26' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized27' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized27' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized28' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized28' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized29' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized29' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized30' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized30' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized31' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized31' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized32' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized32' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized33' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized33' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized34' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized34' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized35' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized35' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized36' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized36' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized37' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized37' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized38' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized38' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized39' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized39' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized40' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized40' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized41' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized41' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized42' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized42' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized43' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized43' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'soft_reset' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:141]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:295]
+INFO: [Synth 8-256] done synthesizing module 'soft_reset' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'axi_ipif_ssp1' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:5677]
+INFO: [Synth 8-638] synthesizing module 'reg_interface' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:1685]
+INFO: [Synth 8-256] done synthesizing module 'reg_interface' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:1685]
+INFO: [Synth 8-638] synthesizing module 'filter' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:5001]
+INFO: [Synth 8-638] synthesizing module 'debounce' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:1315]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:1315]
+INFO: [Synth 8-256] done synthesizing module 'filter' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:5001]
+INFO: [Synth 8-638] synthesizing module 'iic_control' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:2919]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
+INFO: [Synth 8-638] synthesizing module 'shift8' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:897]
+INFO: [Synth 8-256] done synthesizing module 'shift8' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:897]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n__parameterized0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n__parameterized0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
+INFO: [Synth 8-256] done synthesizing module 'iic_control' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:2919]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
+INFO: [Synth 8-3491] module 'FDR' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39135' bound to instance 'Data_Exists_DFF' of component 'FDR' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:543]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39135]
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39135]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132173' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
+INFO: [Synth 8-638] synthesizing module 'dynamic_master' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:5220]
+INFO: [Synth 8-256] done synthesizing module 'dynamic_master' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:5220]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO__parameterized0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
+INFO: [Synth 8-3491] module 'FDR' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39135' bound to instance 'Data_Exists_DFF' of component 'FDR' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:543]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:83289' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137175' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO__parameterized0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
+INFO: [Synth 8-256] done synthesizing module 'iic' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:6210]
+INFO: [Synth 8-256] done synthesizing module 'axi_iic' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:6906]
+INFO: [Synth 8-256] done synthesizing module 'PmodHYGRO_axi_iic_0_0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/synth/PmodHYGRO_axi_iic_0_0.vhd:91]
+INFO: [Synth 8-6157] synthesizing module 'PmodHYGRO_pmod_bridge_0_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/synth/PmodHYGRO_pmod_bridge_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'PmodHYGRO_pmod_bridge_0_0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/synth/PmodHYGRO_pmod_bridge_0_0.v:53]
+WARNING: [Synth 8-7071] port 'in_top_i2c_gpio_bus_I' of module 'PmodHYGRO_pmod_bridge_0_0' is unconnected for instance 'pmod_bridge_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:337]
+WARNING: [Synth 8-7023] instance 'pmod_bridge_0' of module 'PmodHYGRO_pmod_bridge_0_0' has 33 connections declared, but only 32 given [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:337]
+INFO: [Synth 8-6157] synthesizing module 'PmodHYGRO_xlconstant_0_0' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_xlconstant_0_0/synth/PmodHYGRO_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PmodHYGRO_xlconstant_0_0' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_xlconstant_0_0/synth/PmodHYGRO_xlconstant_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PmodHYGRO' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ipshared/db73/src/PmodHYGRO.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_design_with_uart_PmodHYGRO_0_1' (0#1) [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/synth/pmod_design_with_uart_PmodHYGRO_0_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element ro_a_reg was removed.  [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:2281]
+WARNING: [Synth 8-6014] Unused sequential element sda_cout_reg_d1_reg was removed.  [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:3669]
+WARNING: [Synth 8-6014] Unused sequential element gen_stop_and_scl_hi_reg was removed.  [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:3890]
+WARNING: [Synth 8-6014] Unused sequential element dynamic_MSMS_d_reg was removed.  [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_1_vh_rfs.vhd:5281]
+WARNING: [Synth 8-3848] Net in_top_bus_I in module/entity pmod_concat does not have driver. [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:84]
+WARNING: [Synth 8-3848] Net in_top_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:87]
+WARNING: [Synth 8-3848] Net in_bottom_bus_I in module/entity pmod_concat does not have driver. [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:94]
+WARNING: [Synth 8-3848] Net in_bottom_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:97]
+WARNING: [Synth 8-3848] Net in_bottom_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:100]
+WARNING: [Synth 8-3848] Net in0_I in module/entity pmod_concat does not have driver. [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:104]
+WARNING: [Synth 8-3848] Net in1_I in module/entity pmod_concat does not have driver. [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:105]
+WARNING: [Synth 8-7129] Port in_top_bus_I[3] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_I[2] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_I[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_I[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_uart_gpio_bus_I[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_uart_gpio_bus_I[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_I[3] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_I[2] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_I[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_I[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_I[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_I[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_I[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_I[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in1_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_O[3] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_O[2] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_O[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_O[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_T[3] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_T[2] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_T[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_T[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_uart_gpio_bus_O[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_uart_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_uart_gpio_bus_T[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_uart_gpio_bus_T[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_O[3] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_O[2] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_O[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_O[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_T[3] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_T[2] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_T[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_bus_T[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_O[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_T[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_T[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_O[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_T[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_T[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in1_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in1_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cr[0] in module dynamic_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cr[1] in module dynamic_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cr[2] in module dynamic_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cr[4] in module dynamic_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cr[6] in module dynamic_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cr[7] in module dynamic_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Adr[0] in module iic_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ten_adr[7] in module iic_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ten_adr[6] in module iic_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ten_adr[5] in module iic_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[31] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[30] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[29] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[28] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[27] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[26] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[25] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[24] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[23] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[22] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[21] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[20] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[19] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[18] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[17] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[16] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[15] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[14] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[13] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[12] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[11] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[10] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[9] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[8] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[7] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[6] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[5] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[4] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[3] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[2] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst in module debounce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Stable in module debounce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IIC_Addr[0] in module reg_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IIC_Data[0] in module reg_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IIC_Data[1] in module reg_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IIC_Data[2] in module reg_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IIC_Data[3] in module reg_interface is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1495.785 ; gain = 538.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1495.785 ; gain = 538.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1495.785 ; gain = 538.441
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1495.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 152 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/PmodHYGRO_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_pmod_bridge_0_0/PmodHYGRO_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/PmodHYGRO_axi_timer_0_0.xdc] for cell 'inst/axi_timer_0/U0'
+Finished Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_timer_0_0/PmodHYGRO_axi_timer_0_0.xdc] for cell 'inst/axi_timer_0/U0'
+Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/PmodHYGRO_axi_iic_0_0_board.xdc] for cell 'inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/src/PmodHYGRO_axi_iic_0_0/PmodHYGRO_axi_iic_0_0_board.xdc] for cell 'inst/axi_iic_0/U0'
+Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/pmod_design_with_uart_PmodHYGRO_0_1_board.xdc] for cell 'inst'
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/pmod_design_with_uart_PmodHYGRO_0_1_board.xdc:3]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/pmod_design_with_uart_PmodHYGRO_0_1_board.xdc:4]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/pmod_design_with_uart_PmodHYGRO_0_1_board.xdc:9]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/pmod_design_with_uart_PmodHYGRO_0_1_board.xdc:10]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/pmod_design_with_uart_PmodHYGRO_0_1_board.xdc:11]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/pmod_design_with_uart_PmodHYGRO_0_1_board.xdc:12]
+Finished Parsing XDC File [c:/Users/a/Desktop/MoatazProject/project_1/project_1.gen/sources_1/bd/pmod_design_with_uart/ip/pmod_design_with_uart_PmodHYGRO_0_1/pmod_design_with_uart_PmodHYGRO_0_1_board.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pmod_design_with_uart_PmodHYGRO_0_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pmod_design_with_uart_PmodHYGRO_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1566.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  FDR => FDRE: 33 instances
+  FDRS => FDRS (FDRE, LUT2, VCC): 1 instance 
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 30 instances
+  MUXCY_L => MUXCY: 12 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1569.125 ; gain = 2.926
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_iic_0/U0. (constraint file  C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/dont_touch.xdc, line 20).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/dont_touch.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_timer_0/U0. (constraint file  C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/dont_touch.xdc, line 33).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/pmod_bridge_0/inst. (constraint file  C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/dont_touch.xdc, line 38).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/pmod_bridge_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_iic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/axi_iic_0/U0/X_IIC/IIC_CONTROL_I/Scl_T. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/axi_iic_0/U0/X_IIC/IIC_CONTROL_I/Sda_T. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'scl_state_reg' in module 'iic_control'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'iic_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                  header |                              101 |                              001
+              ack_header |                              110 |                              010
+                rcv_data |                              100 |                              011
+                ack_data |                              011 |                              100
+               xmit_data |                              010 |                              101
+                wait_ack |                              001 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'iic_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                scl_idle |                       0000000001 |                             0000
+              start_wait |                       0000000010 |                             0001
+                   start |                       0000000100 |                             0010
+              start_edge |                       0000001000 |                             0011
+            scl_low_edge |                       0000010000 |                             0100
+                 scl_low |                       0000100000 |                             0101
+           scl_high_edge |                       0001000000 |                             0110
+                scl_high |                       0010000000 |                             0111
+               stop_edge |                       0100000000 |                             1000
+               stop_wait |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'scl_state_reg' using encoding 'one-hot' in module 'iic_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 171   
++---Muxes : 
+	   3 Input   33 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 15    
+	  10 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 4     
+	   3 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 11    
+	  21 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 7     
+	   3 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 128   
+	   4 Input    1 Bit        Muxes := 6     
+	   7 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SCL_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SCL_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SDA_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SDA_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module cdc_sync.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    18|
+|2     |LUT1    |    11|
+|3     |LUT2    |    99|
+|4     |LUT3    |   151|
+|5     |LUT4    |   123|
+|6     |LUT5    |    82|
+|7     |LUT6    |   219|
+|8     |MUXCY   |    64|
+|9     |MUXCY_L |     9|
+|10    |MUXF7   |     8|
+|11    |MUXF8   |     4|
+|12    |SRL16E  |    18|
+|13    |XORCY   |    12|
+|14    |FDR     |    23|
+|15    |FDRE    |   473|
+|16    |FDSE    |    51|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1569.125 ; gain = 611.781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 147 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:50 . Memory (MB): peak = 1569.125 ; gain = 538.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1569.125 ; gain = 611.781
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1569.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1569.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 58 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 35 instances
+  FDR => FDRE: 23 instances
+
+Synth Design complete | Checksum: 9e4fa218
+INFO: [Common 17-83] Releasing license: Synthesis
+384 Infos, 185 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:09 . Memory (MB): peak = 1569.125 ; gain = 1009.359
+INFO: [Common 17-1381] The checkpoint 'C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/pmod_design_with_uart_PmodHYGRO_0_1.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 47 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/a/Desktop/MoatazProject/project_1/project_1.runs/pmod_design_with_uart_PmodHYGRO_0_1_synth_1/pmod_design_with_uart_PmodHYGRO_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pmod_design_with_uart_PmodHYGRO_0_1_utilization_synth.rpt -pb pmod_design_with_uart_PmodHYGRO_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  3 11:23:06 2024...

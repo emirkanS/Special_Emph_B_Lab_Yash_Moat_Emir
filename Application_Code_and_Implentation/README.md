@@ -11,4 +11,5 @@ Please, professor, Could you check them via the following link?
 [Adavanced Hardware Engineering Project using FPGA](https://drive.google.com/drive/folders/1Zg0kyCJmz0nRHEkezMPiZ5E17GoW2_ms?usp=sharing)
 
 The platform project is located in the "FinalProject" directory.
+
 The application project is located in the "FinalAPP" directory.

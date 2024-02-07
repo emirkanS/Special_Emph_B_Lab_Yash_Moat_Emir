@@ -1,0 +1,7 @@
+timestamp=[2024-02-07 21:13:22], mode=WORKBENCH_START, duration=0:00:34.550, duration_ms=34550, data={}
+timestamp=[2024-02-07 21:13:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.018, duration_ms=18, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-02-07 21:13:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.085, duration_ms=85, data={}
+timestamp=[2024-02-07 21:14:00], mode=PLATFORM_CREATION, duration=0:00:02.654, duration_ms=2654, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2024-02-07 21:14:13], mode=PLATFORM_GENERATION, duration=0:00:08.528, duration_ms=8528, data={name=platform_project}
+timestamp=[2024-02-07 21:14:58], mode=APP_CREATION, duration=0:00:01.236, duration_ms=1236, data={name=application_project, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=platform_project, application_type=application}
+timestamp=[2024-02-07 21:18:37], mode=BUILD, duration=0:00:01.312, duration_ms=1312, data={name=application_project, configuration=Debug, clean_build=false}

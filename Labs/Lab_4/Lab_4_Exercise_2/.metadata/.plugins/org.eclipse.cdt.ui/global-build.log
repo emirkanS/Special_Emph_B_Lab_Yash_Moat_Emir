@@ -1,0 +1,25 @@
+Nothing to build in platform 'platform_project'
+
+21:18:35 **** Build of configuration Debug for project application_project ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/Emphasis_B/Labs/Lab_4/Lab_4_Exercise_2/platform_project/export/platform_project/sw/platform_project/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -ID:/Emphasis_B/Labs/Lab_4/Lab_4_Exercise_2/platform_project/export/platform_project/sw/platform_project/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: application_project.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Emphasis_B/Labs/Lab_4/Lab_4_Exercise_2/platform_project/export/platform_project/sw/platform_project/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "application_project.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: application_project.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size application_project.elf  |tee "application_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2948	    316	   3112	   6376	   18e8	application_project.elf
+'Finished building: application_project.elf.size'
+' '

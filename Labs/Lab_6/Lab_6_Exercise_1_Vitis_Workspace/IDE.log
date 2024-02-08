@@ -1,0 +1,54 @@
+01:10:26 DEBUG : Logs will be stored at 'D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/IDE.log'.
+01:10:30 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Emphasis_B\Labs\Lab_6\Lab_6_Exercise_1_Vitis_Workspace\temp_xsdb_launch_script.tcl
+01:10:30 INFO  : Platform repository initialization has completed.
+01:10:30 INFO  : Registering command handlers for Vitis TCF services
+01:10:32 INFO  : XSCT server has started successfully.
+01:10:32 INFO  : Successfully done setting XSCT server connection channel  
+01:10:32 INFO  : plnx-install-location is set to ''
+01:10:32 INFO  : Successfully done query RDI_DATADIR 
+01:10:32 INFO  : Successfully done setting workspace for the tool. 
+01:11:05 INFO  : Result from executing command 'getProjects': platform_project
+01:11:05 INFO  : Result from executing command 'getPlatforms': 
+01:11:25 INFO  : Result from executing command 'getProjects': platform_project
+01:11:25 INFO  : Result from executing command 'getPlatforms': platform_project|D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/platform_project/export/platform_project/platform_project.xpfm
+01:13:10 INFO  : Checking for BSP changes to sync application flags for project 'application_project'...
+01:13:38 INFO  : Bit file 'D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/application_project/_ide/bitstream/download.bit' is generated.
+01:13:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:13:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61C74A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61C74A-13631093-0"}' command is executed.
+01:13:40 INFO  : Device configured successfully with "D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/application_project/_ide/bitstream/download.bit"
+01:14:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:14:08 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61C74A' is selected.
+01:14:08 INFO  : 'jtag frequency' command is executed.
+01:14:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61C74A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61C74A-13631093-0"}' command is executed.
+01:14:10 INFO  : Device configured successfully with "D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/application_project/_ide/bitstream/download.bit"
+01:14:10 INFO  : Context for processor 'microblaze_0' is selected.
+01:14:10 INFO  : Hardware design and registers information is loaded from 'D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/platform_project/export/platform_project/hw/Lab_6_Exercise_1_hardware_wrapper.xsa'.
+01:14:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:14:10 INFO  : Context for processor 'microblaze_0' is selected.
+01:14:10 INFO  : System reset is completed.
+01:14:13 INFO  : 'after 3000' command is executed.
+01:14:13 INFO  : Context for processor 'microblaze_0' is selected.
+01:14:13 INFO  : The application 'D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/application_project/Debug/application_project.elf' is downloaded to processor 'microblaze_0'.
+01:14:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61C74A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61C74A-13631093-0"}
+fpga -file D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/application_project/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/platform_project/export/platform_project/hw/Lab_6_Exercise_1_hardware_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_1_Vitis_Workspace/application_project/Debug/application_project.elf
+----------------End of Script----------------
+
+01:14:13 INFO  : Context for processor 'microblaze_0' is selected.
+01:14:13 INFO  : 'con' command is executed.
+01:14:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:14:13 INFO  : Launch script is exported to file 'D:\Emphasis_B\Labs\Lab_6\Lab_6_Exercise_1_Vitis_Workspace\application_project_system\_ide\scripts\debugger_application_project-default.tcl'
+01:14:24 INFO  : Disconnected from the channel tcfchan#2.

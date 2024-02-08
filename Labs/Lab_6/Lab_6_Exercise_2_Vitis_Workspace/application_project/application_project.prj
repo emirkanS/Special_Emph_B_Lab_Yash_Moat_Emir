@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="application_project" location="D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_2_Vitis_Workspace/application_project" platform="D:/Emphasis_B/Labs/Lab_6/Lab_6_Exercise_2_Vitis_Workspace/platform_project/export/platform_project/platform_project.xpfm" platformUID="xilinx:nexys-a7-100t::0.0(custom)" systemProject="application_project_system" sysConfig="platform_project" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="6cee39f49ede05aaf14d5ed8e8a4f66a">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.502800555">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.613419573" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
